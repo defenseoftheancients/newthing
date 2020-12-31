@@ -1,0 +1,135 @@
+html,
+body {
+  margin: 0 auto;
+  height: 100%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: monospace;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #1d212b;
+}
+
+.container {
+  position: relative;
+  width: 30vw;
+  height: 30vw;
+  line-height: 30vw;
+  text-align: center;
+  color: #252B37;
+  background-color: #151823;
+  -webkit-animation: textColor 10s ease infinite;
+          animation: textColor 10s ease infinite;
+  border-radius: 50%;
+}
+
+.box {
+  width: 100%;
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+h1 {
+  font-size: 15px;
+  height: 70px;
+}
+
+.box div {
+  font-family: 'Patrick Hand', cursive;
+  display: inline-block;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: white;
+  margin: 0 10px;
+  font-size: 16px;
+  background: -webkit-gradient(linear, right top, left top, from(#0fffc1), to(#7e0fff));
+  background: linear-gradient(270deg, #0fffc1, #7e0fff);
+  background-size: 200% 200%;
+  -webkit-animation: animateGlow 10s ease infinite;
+          animation: animateGlow 10s ease infinite;
+}
+
+.container:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  -webkit-transform: scale(0.75);
+          transform: scale(0.75);
+  -webkit-filter: blur(10vw);
+  -moz-filter: blur(10vw);
+  -ms-filter: blur(10vw);
+  filter: blur(10vw);
+  background: -webkit-gradient(linear, right top, left top, from(#0fffc1), to(#7e0fff));
+  background: linear-gradient(270deg, #0fffc1, #7e0fff);
+  background-size: 200% 200%;
+  -webkit-animation: animateGlow 10s ease infinite;
+          animation: animateGlow 10s ease infinite;
+}
+
+@-webkit-keyframes animateGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes animateGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@-webkit-keyframes textColor {
+  0% {
+    color: #7e0fff;
+  }
+  50% {
+    color: #0fffc1;
+  }
+  100% {
+    color: #7e0fff;
+  }
+}
+
+@keyframes textColor {
+  0% {
+    color: #7e0fff;
+  }
+  50% {
+    color: #0fffc1;
+  }
+  100% {
+    color: #7e0fff;
+  }
+}
+/*# sourceMappingURL=main.css.map */
